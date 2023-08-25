@@ -1,38 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Porcentajes</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="contenedor">
-    <h1>Lista de Porcentajes</h1>
-  <ol id="porcentaje-list">
-  
-  </ol>
-  <p id="suma-total">Suma total: </p>
+        <h1>Lista de Porcentajes</h1>
+        <ol id="porcentaje-list">
 
-  <a href="index.html">Regresar a inicio</a>
-</div>
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      const porcentajes = [20, 5, 10, 5, 5, 10, 5, 5, 5, 5, 5, 10, 10];
-      const porcentajeList = document.getElementById("porcentaje-list");
-      const sumaTotalElement = document.getElementById("suma-total");
+        </ol>
+        <p id="suma-total">Suma total: </p>
 
-      let sumaTotal = 0;
+        <a href="index.html">Regresar a inicio</a>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const porcentajes = [20, 5, 10, 5, 5, 10, 5, 5, 5, 5, 5, 10, 10];
+            const porcentajeList = document.getElementById("porcentaje-list");
+            const sumaTotalElement = document.getElementById("suma-total");
 
-      porcentajes.forEach(porcentaje => {
-        const li = document.createElement("li");
-        li.textContent = `${porcentaje}%`;
-        porcentajeList.appendChild(li);
-        sumaTotal += porcentaje;
-      });
+            let sumaTotal = 0;
 
-      sumaTotalElement.textContent = `Suma total: ${sumaTotal}%`;
-    });
-  </script>
+            porcentajes.forEach(porcentaje => {
+                const li = document.createElement("li");
+                li.textContent = `${porcentaje}%`;
+                porcentajeList.appendChild(li);
+                sumaTotal += porcentaje;
+            });
+
+            sumaTotalElement.textContent = `Suma total: ${sumaTotal}%`;
+        });
+    </script>
 </body>
+
 </html>
