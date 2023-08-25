@@ -1,0 +1,77 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.contenedor {
+    max-width: 1000px;
+    margin: 0 auto;
+  
+}
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.8rem;
+}
+
+a {
+   
+    font-size: large;
+}
+.titulo1{
+    color: rgba(45, 45, 215, 0.712);
+}
+h2{
+    color: #2d9730;
+}
+p {
+    font-weight: 300;
+    font-size: 2rem;
+    letter-spacing: .03rem;
+    line-height: 3.8rem;
+    color: rgb(57, 56, 56);
+
+}
+.boton{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    margin: 30px;
+}
+
+/* Aplica estilos al checkbox y al label */
+ input[type="checkbox"] {
+    /* Cambia el tamaño del cuadro del checkbox */
+    width: 20px;
+    height: 20px;
+    margin-right: 10px; /* Agrega espacio entre el cuadro y el texto */
+}
+
+ label {
+    /* Cambia el tamaño de la letra */
+    font-size: 18px;
+    vertical-align: middle; /* Centra verticalmente el texto con el cuadro */
+}

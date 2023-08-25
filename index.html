@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcula trade</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+<body>
+    <div class="contenedor">
+    <h1 class="titulo1">Calculador Trade TAP</h1>
+    <form id="quiz-form">
+        <h2>Fundamentales:</h2>
+        <p>1. Hay volatilidad (sobre compra/venta)H4 ?</p>
+        <label><input  type="checkbox" name="q1" value="20"> Sí</label>
+        <label><input type="checkbox" name="q1" value="-20"> No</label>
+
+        <p>2. Tiene trabajo de recuperación de nivel?</p>
+        <label><input type="checkbox" name="q2" value="5"> Sí</label>
+        <label><input type="checkbox" name="q2" value="-5"> No</label>
+
+        <p>3. Tiene un Order Block contrario cerca?</p>
+        <label><input type="checkbox" name="q3" value="-10"> Sí</label>
+        <label><input type="checkbox" name="q3" value="10"> No</label>
+
+        <p>4. Ha roto Order Block en el trabajo del rango?</p>
+        <label><input type="checkbox" name="q4" value="5"> Sí</label>
+        <label><input type="checkbox" name="q4" value="-5"> No</label>
+
+        <p>5. Medias Móviles 200 y 50 están por debajo de la mitad de la sobre compra o sobreventa?</p>
+        <label><input type="checkbox" name="q5" value="5"> Sí</label>
+        <label><input type="checkbox" name="q5" value="-5"> No</label>
+<h2>Afinando gatillo:</h2>
+        <p>6. En H4 existe una nube lejos (IMAN) y de color rojo si el rango está arriba o verde si el rango está abajo?</p>
+        <label><input type="checkbox" name="q6" value="10"> Sí</label>
+        <label><input type="checkbox" name="q6" value="-10"> No</label>
+
+        <p>7. H4 0 M30 revalidan la marca de nivel?</p>
+        <label><input type="checkbox" name="q7" value="5"> Sí</label>
+        <label><input type="checkbox" name="q7" value="-5"> No</label>
+
+        <p>8. M30 trendline ya cobija el precio?</p>
+        <label><input type="checkbox" name="q8" value="5"> Sí</label>
+        <label><input type="checkbox" name="q8" value="-5"> No</label>
+
+        <p>9. M30 nube IMAN predictiva a favor o nube plana en contra?</p>
+        <label><input type="checkbox" name="q9" value="5"> Sí</label>
+        <label><input type="checkbox" name="q9" value="-5"> No</label>
+
+        <p>10. H1 precio cruza MM10?</p>
+        <label><input type="checkbox" name="q10" value="5"> Sí</label>
+        <label><input type="checkbox" name="q10" value="-5"> No</label>
+
+        <p>11. H4 MM10 cobija precio?</p>
+        <label><input type="checkbox" name="q11" value="5"> Sí</label>
+        <label><input type="checkbox" name="q11" value="-5"> No</label>
+<h2>Maxwell refuerzo</h2>
+        <p>12. MAXWELL H1 y M30 línea amarilla está bajo cero?</p>
+        <label><input type="checkbox" name="q12" value="10"> Sí</label>
+        <label><input type="checkbox" name="q12" value="-10"> No</label>
+
+        <p>13. MAXWELL H4  inclinación a favor amarillo y media no importa que esté encima o bajo cero?</p>
+        <label><input type="checkbox" name="q13" value="10"> Sí</label>
+        <label><input type="checkbox" name="q13" value="-10"> No</label>
+<br>
+        <button  class="boton"  "button" id="calculate-button">Calcular</button>
+    </form>
+    <h1 id="result">Resultado: </h1>
+    <button class="boton" type="button" id="clear-button">Limpiar</button>
+<br>
+<a href="ponderaciones.html">Configuracion sobre porcentajes de  preguntas</a>
+
+
+<footer>
+    <p>&copy; Marco Jaramillo - <span id="current-year"></span></p>
+  </footer>
+</div>
+  <script>
+    const currentYear = new Date().getFullYear();
+    document.getElementById("current-year").textContent = currentYear;
+  </script>
+
+
+    <script src="main.js"></script>
+    
+</body>
+</html>
