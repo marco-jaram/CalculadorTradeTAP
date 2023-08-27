@@ -37,3 +37,40 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
   
+
+// funciona para imprimir
+
+ document.getElementById("print-button").addEventListener("click", function () {
+  const formData = collectFormData();
+  const resultText = formatFormData(formData);
+
+  // Abre una ventana emergente para mostrar los resultados
+  const printWindow = window.open("", "_blank", "width=600,height=400");
+  printWindow.document.write("<pre>" + resultText + "</pre>");
+  printWindow.document.close();
+});
+
+// Función para recopilar los valores de los campos
+function collectFormData() {
+  const formData = {};
+  const campos = document.querySelectorAll("#quiz-form input[type='checkbox'], #activo");
+  
+  campos.forEach(campos => {
+    if (campos.type === "checkbox" && campos.checked) {
+      formData[campos.name] = campos.value;
+    } else if (campos.type === "text") {
+      formData[campos.name] = campos.value;
+    }
+  });
+
+  return formData;
+}
+
+// Función para formatear los resultados
+function formatFormData(formData) {
+  let resultText = "Resultado:\n\n";
+  for (const field in formData) {
+    resultText += `${field}: ${formData[field]}%\n`;
+  }
+  return resultText;
+}

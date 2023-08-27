@@ -78,3 +78,9 @@ p {
 .lista-porcientos li{
 font-size: 16px;
 }
+details summary{
+    font-size: 14px;
+    margin-right: 0.5em;
+    color: #204bb0;
+}
+
