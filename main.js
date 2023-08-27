@@ -38,15 +38,18 @@ document.addEventListener("DOMContentLoaded", function() {
   });
   
 
-// funciona para imprimir
 
+ // Función para imprimir los resultados
  document.getElementById("print-button").addEventListener("click", function () {
   const formData = collectFormData();
   const resultText = formatFormData(formData);
 
-  // Abre una ventana emergente para mostrar los resultados
+  // Obtén el contenido del elemento con id "result"
+  const resultContent = document.getElementById("result").textContent;
+
+  // Abre una ventana emergente para mostrar los resultados y el contenido de "result"
   const printWindow = window.open("", "_blank", "width=600,height=400");
-  printWindow.document.write("<pre>" + resultText + "</pre>");
+  printWindow.document.write("<pre>" + resultText + "\n\n" + resultContent + "</pre>");
   printWindow.document.close();
 });
 
