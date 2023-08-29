@@ -83,4 +83,14 @@ details summary{
     margin-right: 0.5em;
     color: #204bb0;
 }
+#activo {
+    padding: 5px; /* Aumenta el relleno interno para hacerlo más alto */
+    font-size: 16px; /* Tamaño de fuente */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+    width: 300px; /* Ancho del campo */
+   color: #2d9730;
+   
+}
 

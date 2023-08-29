@@ -77,3 +77,27 @@ function formatFormData(formData) {
   }
   return resultText;
 }
+
+// fecha y hora
+function mostrarFechaHora() {
+  const fechaHoraElement = document.getElementById("fecha");
+
+  const options = {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+      hour: "numeric",
+      minute: "numeric",
+      second: "numeric",
+      hour12: false,
+      timeZoneName: "short"
+  };
+
+  setInterval(() => {
+      const fechaHoraActual = new Date();
+      const fechaHoraTexto = fechaHoraActual.toLocaleString("es-ES", options);
+      fechaHoraElement.textContent = fechaHoraTexto;
+  }, 1000); // Actualizar cada segundo (1000 ms)
+}
+
+mostrarFechaHora(); // Llamar a la función para iniciarla
