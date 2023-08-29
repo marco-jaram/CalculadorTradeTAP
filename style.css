@@ -94,3 +94,60 @@ details summary{
    
 }
 
+/* estilos para api de noticias */
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos para cada noticia */
+.article-container {
+    border: 1px solid #eaeaea;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.article-container h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.article-container p {
+    font-size: 14px;
+    color: #666;
+    margin: 10px 0;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Estilos para el enlace de fuente */
+.source-link {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.source-link:hover {
+    text-decoration: underline;
+}
