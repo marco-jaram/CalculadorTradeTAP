@@ -15,6 +15,15 @@ html {
     margin: 0 auto;
   
 }
+.contenido{
+    margin: 25px;
+}
+.contenedor-botones{
+    margin: 25px;
+}
+footer{
+     margin: 25px;
+}
 h1 {
     font-size: 3rem;
 }

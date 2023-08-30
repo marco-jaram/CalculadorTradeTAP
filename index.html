@@ -9,7 +9,8 @@
 </head>
 
 <body>
-  <div class="contenedor">
+ <div class="contenedor">
+  <div class="contenido">
     <h1 class="titulo1">Calculador Trade TAP</h1>
     <form id="quiz-form">
         <h2>Información del ACTIVO:</h2>
@@ -125,6 +126,8 @@
       <hr>
       <button class="boton" "button" id="calculate-button">Calcular</button>
     </form>
+
+  <div class="contenedor-botonoes">
     <h1 id="result">Resultado: </h1>
     <br>
    <button class="boton" type="button" id="print-button">Imprimir resumen</button>
@@ -135,11 +138,16 @@
     <a href="ponderaciones.html">Configuracion sobre porcentajes de preguntas</a>
 <br>
     <a href="/configMT4.html">Configuracion en Metatrader 4</a>
-
-    <footer>
+  </div>
+  </div>
+</div>
+ <footer>
       <p>&copy; Marco Jaramillo - <span id="current-year"></span> |<br> marco.jaramillocast@gmail.com</p>
     </footer>
-  </div>
+
+
+
+
   <script>
     const currentYear = new Date().getFullYear();
     document.getElementById("current-year").textContent = currentYear;
